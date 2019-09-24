@@ -8,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class MeComponent implements OnInit {
 
   constructor() { }
+  
+  persoon = {
+      name: 'Reda',
+      surname: 'Eradus',
+      age: function() {
+        var date = new Date();
+        return date.getFullYear() - 2000;
+      },
+      adres: 'Loelielaan 32, 2012 EJ Leiden'
+    }
+  
 
   ngOnInit() {
   }
-
 }

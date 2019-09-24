@@ -1,0 +1,15 @@
+nav {
+    display:grid;
+    grid-template-columns: max-content;
+    grid-template-rows: repeat(4, max-content);
+    background-color:#454545;
+    width: max-content;
+    padding: 0 20px;
+    height:100%;
+}
+
+nav i {
+    color: white;
+    font-size:35px!important;
+    padding:5px;
+}
