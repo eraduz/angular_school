@@ -15,7 +15,7 @@ export class MoviesComponent implements OnInit {
   ngOnInit() {
     this.data.getMovies().subscribe(
       filmpjes => this.movies = filmpjes
-    )
+    );
   }
 
 }
