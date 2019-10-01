@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DataService} from '../data.service';
 
 @Component({
   selector: 'app-movies',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesComponent implements OnInit {
 
-  constructor() { }
+  movies: Object;
+
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.getMovies().subscribe(
+      filmpjes => this.movies = filmpjes
+    )
   }
 
 }

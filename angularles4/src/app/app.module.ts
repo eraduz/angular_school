@@ -8,6 +8,7 @@ import { SchoolComponent } from './school/school.component';
 import { MoviesComponent } from './movies/movies.component';
 import { WorkComponent } from './work/work.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
