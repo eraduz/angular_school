@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from '../data.service';
 
+
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
@@ -8,13 +9,13 @@ import {DataService} from '../data.service';
 })
 export class MoviesComponent implements OnInit {
 
-  movies: Object;
+  Matrix: Object;
 
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.getMovies().subscribe(
-      filmpjes => this.movies = filmpjes
+    this.data.getMatrix().subscribe(
+      filmpjes => this.Matrix = filmpjes
     );
   }
 

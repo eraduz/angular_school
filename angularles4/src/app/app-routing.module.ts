@@ -4,6 +4,7 @@ import { MeComponent } from './me/me.component';
 import { MoviesComponent } from './movies/movies.component';
 import { SchoolComponent } from './school/school.component';
 import { WorkComponent } from './work/work.component';
+import { FavmovieComponent } from './favmovie/favmovie.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'work',
     component: WorkComponent
+  },
+  {
+    path: 'favmovies',
+    component: FavmovieComponent
   }
 ];
 

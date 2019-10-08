@@ -9,6 +9,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { WorkComponent } from './work/work.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FavmovieComponent } from './favmovie/favmovie.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     SchoolComponent,
     MoviesComponent,
     WorkComponent,
-    SidebarComponent
+    SidebarComponent,
+    FavmovieComponent
   ],
   imports: [
     BrowserModule,

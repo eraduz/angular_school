@@ -1,2 +1,5 @@
-{{movies.Search[1].Title + ' ' + movies.Search[1].Year}} <br>
-<img style='height: auto; width:200px;' src='{{movies.Search[1].Poster}}'/>
+<div class="movies" *ngFor="let movie of Matrix?.Search">
+    <h1 >{{movie.Title}}</h1>
+    <p>{{movie.Year}}</p>
+    <img style='height: auto; width:200px;' src='{{movie.Poster}}'/>
+</div>

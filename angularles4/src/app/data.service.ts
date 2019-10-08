@@ -10,7 +10,10 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
 
-  getMovies() {
+  getMatrix() {
     return this.http.get('http://www.omdbapi.com/?s=matrix&apikey=2a4818f4');
+  }
+  getBigHero() {
+    return this.http.get('http://www.omdbapi.com/?i=tt2245084&apikey=2a4818f4');
   }
 }
